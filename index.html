@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chat</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <input type="text" class="field" placeholder="Кто Вы?">
+            <input type="submit" class="button" value="Нажми меня">
+        </form>
+        <div class="list">
+            <div class="list-title">Онлайн:</div>
+            <div class="userlist"></div>
+        </div>
+        <div class="chat">
+            <div class="chat-history">
+                <div class="chat-history-title">История сообщений:</div>
+                <div class="chat-history-body"></div>
+            </div>
+            <form class="chat-form">
+                <textarea class="chat-field" placeholder="Сообщение" maxlength="1000"></textarea>
+                <input type="submit" class="chat-button" value="Отправить">
+            </form>
+        </div>
+    </div>
+    <script src="static/ws_client.js"></script>
+</body>
+</html>
